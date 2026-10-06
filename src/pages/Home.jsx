@@ -351,7 +351,7 @@ const Home = () => {
 
             <div className="overflow-hidden rounded-[26px] bg-white shadow-sm">
               <img
-                src="/cottages/2bhk.png"
+                src="/cottages/2bhk.jpg"
                 alt="2BHK Cottage"
                 className="h-[330px] w-full object-cover"
               />
@@ -397,13 +397,13 @@ const Home = () => {
                 text: "A thoughtfully planned collection of hillside cottages.",
               },
               {
-                image: "/images/terraced/clubhouse.jpg",
+                image: "/images/clubhouse.png",
                 title: "Club House",
                 highlight: "Central Pavilion",
                 text: "A central gathering space designed for community and leisure.",
               },
               {
-                image: "/images/terraced/site-area.jpg",
+                image: "/images/site-area.jpg",
                 title: "Site Area",
                 highlight: "~2.8 Acres",
                 text: "A spacious natural setting planned around the terrain.",
