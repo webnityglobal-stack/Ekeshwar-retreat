@@ -255,7 +255,7 @@ const Footer = () => {
                   </p>
 
                   <p className="mt-1 text-sm leading-6 text-white/70">
-                    Uttarakhand, India
+                    Satpuli Pauri Garhwal Uttarakhand PIN code -246001
                   </p>
                 </div>
 
@@ -275,10 +275,10 @@ const Footer = () => {
                   </p>
 
                   <a
-                    href="tel:+918882607879"
+                    href="tel:+91-9910058152 ,+91-6386293245"
                     className="mt-1 block text-sm text-white/70 transition hover:text-[#d6a04a]"
                   >
-                    +91 88826 07879
+                    +91-9910058152 , +91-6386293245
                   </a>
                 </div>
 
@@ -301,7 +301,7 @@ const Footer = () => {
                     href="mailto:info@ekeshwarretreat.com"
                     className="mt-1 block break-all text-sm text-white/70 transition hover:text-[#d6a04a]"
                   >
-                    info@ekeshwarretreat.com
+                   maglambuildtec@gmail.com
                   </a>
                 </div>
 
