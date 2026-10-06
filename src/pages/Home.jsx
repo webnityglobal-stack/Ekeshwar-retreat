@@ -214,13 +214,13 @@ const Home = () => {
             <div className="relative">
               <div className="grid grid-cols-2 gap-4">
                 <img
-                  src="/images/experience-1.png"
+                  src="/images/Himalya.png"
                   alt="Himalayan nature"
                   className="h-[260px] w-full rounded-[24px] object-cover sm:h-[330px]"
                 />
 
                 <img
-                  src="/images/experience-2.png"
+                  src="/images/cottage.png"
                   alt="Luxury cottage"
                   className="mt-10 h-[260px] w-full rounded-[24px] object-cover sm:h-[330px]"
                 />
@@ -330,7 +330,7 @@ const Home = () => {
           <div className="mt-12 grid gap-7 md:grid-cols-2">
             <div className="overflow-hidden rounded-[26px] bg-white shadow-sm">
               <img
-                src="/images/cottages/1bhk.jpg"
+                src="/cottages/1bhk.png"
                 alt="1BHK Cottage"
                 className="h-[330px] w-full object-cover"
               />
@@ -351,7 +351,7 @@ const Home = () => {
 
             <div className="overflow-hidden rounded-[26px] bg-white shadow-sm">
               <img
-                src="/images/cottages/2bhk.jpg"
+                src="/cottages/2bhk.png"
                 alt="2BHK Cottage"
                 className="h-[330px] w-full object-cover"
               />
