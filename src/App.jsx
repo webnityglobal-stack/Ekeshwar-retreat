@@ -1,28 +1,29 @@
-import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import './App.css'
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Home from "./pages/Home";
+import AboutUs from "./pages/AboutUs";
+import Gallery from "./pages/Gallery";
+import Blog from "./pages/Blog";
+import ContactUs from "./pages/ContactUs";
 
 function App() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-[#f8f6ef]">
-      <div className="text-center">
-        <img
-          src="/images/Ekeshwar-Logo.png"
-          alt="Ekeshwar Retreat"
-          className="w-[420px] mx-auto mb-8"
-        />
+    <BrowserRouter>
+      <Routes>
 
-        <h1 className="text-4xl font-semibold text-[#0b4d32]">
-          Ekeshwar Retreat
-        </h1>
+        <Route path="/" element={<Home />} />
 
-        <p className="mt-3 text-gray-600">
-          Luxury Living in Harmony with Nature
-        </p>
-      </div>
-    </div>
+        <Route path="/about-us" element={<AboutUs />} />
+
+        <Route path="/gallery" element={<Gallery />} />
+
+        <Route path="/blog" element={<Blog />} />
+
+        <Route path="/contact" element={<ContactUs />} />
+
+      </Routes>
+    </BrowserRouter>
   );
 }
 
