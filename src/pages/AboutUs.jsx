@@ -75,7 +75,7 @@ const AboutUs = () => {
       ====================================================== */}
       <section className="relative h-[70vh] min-h-[520px] w-full">
         <img
-          src="/images/about-Ekeshwar.jpg"
+          src="/about/about-Ekeshwar.jpg"
           alt="Ekeshwar Retreat Uttarakhand"
           className="absolute inset-0 h-full w-full object-cover"
         />
@@ -108,7 +108,7 @@ const AboutUs = () => {
           <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
             <div className="overflow-hidden rounded-[30px]">
               <img
-                src="/images/about/about-intro.jpg"
+                src="/about/about-intro.jpg"
                 alt="Uttarakhand hillside"
                 className="h-[420px] w-full object-cover sm:h-[540px]"
               />
@@ -227,7 +227,7 @@ const AboutUs = () => {
           <div className="grid gap-6 md:grid-cols-3">
             <div className="group overflow-hidden rounded-[26px]">
               <img
-                src="/images/about/mountain-living.jpg"
+                src="/about/mountain-living.jpg"
                 alt="Mountain living"
                 className="h-[420px] w-full object-cover transition duration-700 group-hover:scale-105"
               />
@@ -246,7 +246,7 @@ const AboutUs = () => {
 
             <div className="group overflow-hidden rounded-[26px]">
               <img
-                src="/images/about/forest-life.jpg"
+                src="/about/forest-life.jpg"
                 alt="Forest surroundings"
                 className="h-[420px] w-full object-cover transition duration-700 group-hover:scale-105"
               />
@@ -265,7 +265,7 @@ const AboutUs = () => {
 
             <div className="group overflow-hidden rounded-[26px]">
               <img
-                src="/images/about/sunset.jpg"
+                src="/about/sunset.jpg"
                 alt="Himalayan sunset"
                 className="h-[420px] w-full object-cover transition duration-700 group-hover:scale-105"
               />
@@ -333,7 +333,7 @@ const AboutUs = () => {
 
             <div className="overflow-hidden rounded-[30px]">
               <img
-                src="/images/about/why-ekeshwar.jpg"
+                src="/about/why-ekeshwar.jpg"
                 alt="Ekeshwar Retreat"
                 className="h-[480px] w-full object-cover sm:h-[580px]"
               />
@@ -442,7 +442,7 @@ const AboutUs = () => {
       ====================================================== */}
       <section className="relative overflow-hidden">
         <img
-          src="/images/about/about-cta.jpg"
+          src="/about/about-cta.jpg"
           alt="Visit Ekeshwar Retreat"
           className="absolute inset-0 h-full w-full object-cover"
         />
