@@ -35,32 +35,7 @@ const Home = () => {
     },
   ];
 
-  const galleryImages = [
-    {
-      image: "/vistas/vista-1.jpg",
-      title: "Mountain Views",
-    },
-    {
-      image: "/vistas/vista-2.jpg",
-      title: "Natural Surroundings",
-    },
-    {
-      image: "/vistas/vista-3.jpg",
-      title: "Himalayan Serenity",
-    },
-    {
-      image: "/images/Himalya.png",
-      title: "Himalayan Landscape",
-    },
-    {
-      image: "/images/cottage.png",
-      title: "Cottage Living",
-    },
-    {
-      image: "/images/about-Ekeshwar.jpg",
-      title: "Ekeshwar Retreat",
-    },
-  ];
+  
 
   return (
     <div className="w-full overflow-hidden bg-[#fffaf5] text-[#263c32]">
@@ -473,61 +448,8 @@ const Home = () => {
         </div>
       </section>
 
-      {/* =====================================================
-          SECTION 3 — WHY EKESHWAR RETREAT / KEY HIGHLIGHTS
-      ====================================================== */}
-      {/* <section className="bg-[#f4f0e8] py-20 sm:py-24 lg:py-28">
-        <div className="mx-auto max-w-[1280px] px-6 sm:px-10 lg:px-8">
-          <div className="mx-auto max-w-[800px] text-center">
-            <p className="text-sm font-semibold uppercase tracking-[3px] text-[#c89132]">
-              Why Ekeshwar Retreat
-            </p>
 
-            <h2 className="mt-3 font-serif text-3xl font-semibold text-[#244c3b] sm:text-4xl lg:text-5xl">
-              Designed for a Serene Life
-            </h2>
-
-            <p className="mt-5 leading-8 text-gray-600">
-              Experience the beauty of the hills with thoughtful features
-              created around comfort, nature and peaceful living.
-            </p>
-          </div>
-
-          <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-            {highlights.map((item) => (
-              <div
-                key={item.title}
-                className="rounded-[24px] bg-white p-7 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-md"
-              >
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#244c3b] text-xl text-white">
-                  ✦
-                </div>
-
-                <h3 className="mt-6 font-serif text-xl font-semibold text-[#244c3b]">
-                  {item.title}
-                </h3>
-
-                <div className="mt-3 h-0.5 w-12 bg-[#d99a35]" />
-
-                <p className="mt-4 text-sm leading-7 text-gray-600">
-                  {item.text}
-                </p>
-              </div>
-            ))}
-          </div>
-
-          <div className="mt-8 text-center">
-            <a
-              href="/about"
-              className="inline-flex rounded-full border border-[#244c3b] px-7 py-3.5 text-sm font-semibold text-[#244c3b] transition hover:bg-[#244c3b] hover:text-white"
-            >
-              Discover More
-            </a>
-          </div>
-        </div>
-      </section> */}
-
-      {/* =====================================================
+  {/* =====================================================
     SECTION 3 — EXPERIENCE EKESHWAR / VIDEO
 ====================================================== */}
       <section className="relative overflow-hidden bg-[#fffaf5] py-20 sm:py-24 lg:py-28">
@@ -934,7 +856,7 @@ const Home = () => {
       </section>
 
       {/* =====================================================
-          SECTION 4 — OUR COTTAGES
+          SECTION 5 — OUR COTTAGES
       ====================================================== */}
       <section
         id="cottages"
@@ -1001,182 +923,233 @@ const Home = () => {
         </div>
       </section>
 
-      {/* =====================================================
-          SECTION 5 — TERRACED LAYOUT / MASTER PLAN
-      ====================================================== */}
-      <section className="bg-[#244c3b] py-20 sm:py-24 lg:py-28">
-        <div className="mx-auto max-w-[1280px] px-6 sm:px-10 lg:px-8">
-          <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
-            <div className="overflow-hidden rounded-[28px] bg-white">
-              <img
-                src="/master-plan/master-plan.avif"
-                alt="Ekeshwar Retreat Master Plan"
-                className="h-[380px] w-full object-cover sm:h-[500px] lg:h-[560px]"
-              />
-            </div>
+{/* =====================================================
+    SECTION 6 — MASTER PLAN & COTTAGE LAYOUT
+====================================================== */}
+<section className="bg-[#244c3b] py-20 sm:py-24 lg:py-28">
 
-            <div>
-              <p className="text-sm font-semibold uppercase tracking-[3px] text-[#e2b35a]">
-                Thoughtful Planning
-              </p>
+  <div className="mx-auto max-w-[1280px] px-5 sm:px-8 lg:px-10">
 
-              <h2 className="mt-3 font-serif text-3xl font-semibold leading-tight text-white sm:text-4xl lg:text-5xl">
-                Terraced Layout & Master Plan
-              </h2>
+    {/* =================================================
+        SECTION HEADING
+    ================================================== */}
+    <div className="mx-auto max-w-[800px] text-center">
 
-              <p className="mt-6 text-base leading-8 text-white/80 sm:text-lg">
-                The retreat is thoughtfully planned around the natural
-                character of the hillside, creating a peaceful setting where
-                cottages and shared spaces come together harmoniously.
-              </p>
+      <p className="text-sm font-semibold uppercase tracking-[3px] text-[#e2b35a]">
+        Thoughtful Planning
+      </p>
 
-              <p className="mt-5 text-base leading-8 text-white/80 sm:text-lg">
-                Explore the master plan to understand the overall layout,
-                cottage placement and planning of the retreat.
-              </p>
+      <h2 className="mt-3 font-serif text-3xl font-semibold leading-tight text-white sm:text-4xl lg:text-5xl">
+        Master Plan & Cottage Layout
+      </h2>
 
-              <div className="mt-8">
-                <a
-                  href="/project-details"
-                  className="inline-flex rounded-full bg-[#d99a35] px-7 py-3.5 text-sm font-semibold text-white transition hover:bg-[#bd8124]"
-                >
-                  View Project Details →
-                </a>
-              </div>
-            </div>
+      <div className="mx-auto mt-5 h-0.5 w-20 bg-[#d99a35]" />
+
+      <p className="mx-auto mt-5 max-w-[720px] text-base leading-8 text-white/70 sm:text-lg">
+        Explore the thoughtfully planned layout of Ekeshwar Retreat,
+        from the overall site plan to the detailed cottage floor layout.
+      </p>
+
+    </div>
+
+
+    {/* =================================================
+        PLANS
+    ================================================== */}
+    <div className="mt-14 grid gap-8 lg:grid-cols-2">
+
+      {/* =================================================
+          MASTER PLAN
+      ================================================== */}
+      <div className="group overflow-hidden rounded-[30px] bg-white shadow-xl">
+
+        {/* Image */}
+        <div className="relative overflow-hidden bg-[#f7f5ef]">
+
+          <img
+            src="/master-plan/master-plan.png"
+            alt="Ekeshwar Retreat Master Plan"
+            className="
+              h-[480px]
+              w-full
+              object-contain
+              p-5
+              transition
+              duration-700
+              group-hover:scale-[1.02]
+              sm:h-[560px]
+              lg:h-[600px]
+            "
+          />
+
+          {/* Image Label */}
+          <div className="absolute left-5 top-5 rounded-full bg-[#244c3b]/90 px-4 py-2 backdrop-blur-sm">
+            <span className="text-xs font-semibold uppercase tracking-[2px] text-white">
+              Site Plan
+            </span>
           </div>
+
         </div>
-      </section>
 
-      {/* =====================================================
-          SECTION 6 — GALLERY / DESIGN VISTAS
-      ====================================================== */}
-      {/* <section className="bg-[#fffaf5] py-20 sm:py-24 lg:py-28">
-        <div className="mx-auto max-w-[1280px] px-6 sm:px-10 lg:px-8">
-          <div className="mx-auto max-w-[800px] text-center">
-            <p className="text-sm font-semibold uppercase tracking-[3px] text-[#c89132]">
-              Explore Ekeshwar
-            </p>
+        {/* Content */}
+        <div className="p-7 sm:p-8">
 
-            <h2 className="mt-3 font-serif text-3xl font-semibold text-[#244c3b] sm:text-4xl lg:text-5xl">
-              Gallery
-            </h2>
+          <p className="text-xs font-semibold uppercase tracking-[3px] text-[#c89132]">
+            Project Layout
+          </p>
 
-            <p className="mt-5 leading-8 text-gray-600">
-              A glimpse into the natural beauty, cottage experience and
-              peaceful surroundings of Ekeshwar Retreat.
-            </p>
-          </div>
+          <h3 className="mt-2 font-serif text-2xl font-semibold text-[#244c3b] sm:text-3xl">
+            Master Plan
+          </h3>
 
-          <div className="mt-12 grid grid-cols-2 gap-4 md:grid-cols-3">
-            {galleryImages.map((item) => (
-              <div
-                key={item.image}
-                className="group overflow-hidden rounded-[22px]"
-              >
-                <img
-                  src={item.image}
-                  alt={item.title}
-                  className="h-[220px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[280px] lg:h-[330px]"
-                />
-              </div>
-            ))}
-          </div>
+          <div className="mt-3 h-0.5 w-14 bg-[#d99a35]" />
 
-          <div className="mt-10 text-center">
-            <a
-              href="/gallery"
-              className="inline-flex rounded-full bg-[#244c3b] px-7 py-3.5 text-sm font-semibold text-white transition hover:bg-[#183a2c]"
-            >
-              View Gallery →
-            </a>
-          </div>
+          <p className="mt-4 text-sm leading-7 text-gray-600 sm:text-base">
+            Get an overview of the overall site planning, cottage
+            placement and landscaped areas of the retreat.
+          </p>
+
+          <button
+            type="button"
+            onClick={() => {
+              window.open(
+                "/master-plan/master-plan.avif",
+                "_blank"
+              );
+            }}
+            className="
+              mt-6
+              inline-flex
+              items-center
+              gap-2
+              rounded-full
+              bg-[#244c3b]
+              px-6
+              py-3
+              text-sm
+              font-semibold
+              text-white
+              transition
+              duration-300
+              hover:bg-[#183a2c]
+            "
+          >
+            View Full Plan
+            <span>↗</span>
+          </button>
+
         </div>
-      </section> */}
 
-      {/* =====================================================
-          SECTION 7 — LOCATION & CONNECTIVITY
-      ====================================================== */}
-      {/* <section className="bg-[#f4f0e8] py-20 sm:py-24 lg:py-28">
-        <div className="mx-auto max-w-[1280px] px-6 sm:px-10 lg:px-8">
-          <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
-            <div>
-              <p className="text-sm font-semibold uppercase tracking-[3px] text-[#c89132]">
-                Location & Connectivity
-              </p>
+      </div>
 
-              <h2 className="mt-3 font-serif text-3xl font-semibold leading-tight text-[#244c3b] sm:text-4xl lg:text-5xl">
-                Connected to the Places That Matter
-              </h2>
 
-              <div className="mt-5 h-0.5 w-20 bg-[#d99a35]" />
+      {/* =================================================
+          COTTAGE FLOOR PLAN
+      ================================================== */}
+      <div className="group overflow-hidden rounded-[30px] bg-white shadow-xl">
 
-              <p className="mt-6 text-base leading-8 text-gray-600 sm:text-lg">
-                Ekeshwar Retreat brings you closer to the peaceful spiritual,
-                wellness and natural experiences of the region.
-              </p>
+        {/* Image */}
+        <div className="relative overflow-hidden bg-[#f7f5ef]">
 
-              <div className="mt-8 grid grid-cols-2 gap-4">
-                <div className="rounded-2xl bg-white p-5">
-                  <h3 className="font-semibold text-[#244c3b]">
-                    Ekeshwar Temple
-                  </h3>
-                </div>
+          <img
+            src="/master-plan/2bhk-layout.jpg"
+            alt="Ekeshwar Retreat Cottage Ground Floor Plan"
+            className="
+              h-[480px]
+              w-full
+              object-contain
+              p-5
+              transition
+              duration-700
+              group-hover:scale-[1.02]
+              sm:h-[560px]
+              lg:h-[600px]
+            "
+          />
 
-                <div className="rounded-2xl bg-white p-5">
-                  <h3 className="font-semibold text-[#244c3b]">
-                    Tadkeshwar Mandir
-                  </h3>
-                </div>
-
-                <div className="rounded-2xl bg-white p-5">
-                  <h3 className="font-semibold text-[#244c3b]">
-                    Sidhbali Lansdowne Mandir
-                  </h3>
-                </div>
-
-                <div className="rounded-2xl bg-white p-5">
-                  <h3 className="font-semibold text-[#244c3b]">
-                    Yoga & Wellness
-                  </h3>
-                </div>
-
-                <div className="rounded-2xl bg-white p-5">
-                  <h3 className="font-semibold text-[#244c3b]">
-                    Upcoming Lake
-                  </h3>
-                </div>
-
-                <div className="rounded-2xl bg-white p-5">
-                  <h3 className="font-semibold text-[#244c3b]">
-                    Delhi–Pauri Highway
-                  </h3>
-                </div>
-              </div>
-
-              <div className="mt-8">
-                <a
-                  href="/location"
-                  className="inline-flex rounded-full bg-[#244c3b] px-7 py-3.5 text-sm font-semibold text-white transition hover:bg-[#183a2c]"
-                >
-                  Explore Location →
-                </a>
-              </div>
-            </div>
-
-            <div className="overflow-hidden rounded-[28px]">
-              <img
-                src="/location/location.jpg"
-                alt="Ekeshwar Retreat Location"
-                className="h-[420px] w-full object-cover sm:h-[540px]"
-              />
-            </div>
+          {/* Image Label */}
+          <div className="absolute left-5 top-5 rounded-full bg-[#244c3b]/90 px-4 py-2 backdrop-blur-sm">
+            <span className="text-xs font-semibold uppercase tracking-[2px] text-white">
+              Cottage Layout
+            </span>
           </div>
-        </div>
-      </section> */}
 
-      {/* =====================================================
-    SECTION 8 — LOCATION & CONNECTIVITY
+        </div>
+
+        {/* Content */}
+        <div className="p-7 sm:p-8">
+
+          <p className="text-xs font-semibold uppercase tracking-[3px] text-[#c89132]">
+            Ground Floor Plan
+          </p>
+
+          <h3 className="mt-2 font-serif text-2xl font-semibold text-[#244c3b] sm:text-3xl">
+            Cottage Layout
+          </h3>
+
+          <div className="mt-3 h-0.5 w-14 bg-[#d99a35]" />
+
+          <p className="mt-4 text-sm leading-7 text-gray-600 sm:text-base">
+            Explore the cottage floor plan and understand the
+            arrangement of living, bedroom, kitchen, toilet and
+            verandah spaces.
+          </p>
+
+          <button
+            type="button"
+            onClick={() => {
+              window.open(
+                "/images/layouts/2bhk-layout.jpg",
+                "_blank"
+              );
+            }}
+            className="
+              mt-6
+              inline-flex
+              items-center
+              gap-2
+              rounded-full
+              bg-[#244c3b]
+              px-6
+              py-3
+              text-sm
+              font-semibold
+              text-white
+              transition
+              duration-300
+              hover:bg-[#183a2c]
+            "
+          >
+            View Full Layout
+            <span>↗</span>
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    {/* =================================================
+        BOTTOM INFORMATION
+    ================================================== */}
+    <div className="mx-auto mt-12 max-w-[850px] text-center">
+
+      <p className="text-sm leading-7 text-white/60 sm:text-base">
+        Thoughtfully planned spaces designed to work with the
+        natural character of the hillside while providing comfortable
+        and functional cottage living.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+      
+{/* =====================================================
+    SECTION 7 — LOCATION & CONNECTIVITY
 ====================================================== */}
       <section className="relative overflow-hidden bg-[#f4f0e8] py-20 sm:py-24 lg:py-28">
 

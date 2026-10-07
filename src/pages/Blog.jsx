@@ -8,7 +8,7 @@ const blogPosts = [
     title: "The Art of Slow Living in Uttarakhand",
     category: "Lifestyle",
     date: "October 05, 2026",
-    image: "/images/blog/slow-living.jpg",
+    image: "/blog/slow-living.jpg",
     excerpt:
       "Discover why the mountains invite us to slow down, reconnect with nature and appreciate the simple moments of everyday life.",
   },
@@ -17,7 +17,7 @@ const blogPosts = [
     title: "Why Uttarakhand Is Perfect for a Mountain Retreat",
     category: "Travel",
     date: "September 28, 2026",
-    image: "/images/blog/uttarakhand-retreat.jpg",
+    image: "/blog/uttarakhand-retreat.jpg",
     excerpt:
       "From peaceful forests to breathtaking Himalayan views, explore what makes Uttarakhand one of India's most beautiful retreat destinations.",
   },
@@ -26,7 +26,7 @@ const blogPosts = [
     title: "Living Close to Nature",
     category: "Nature",
     date: "September 18, 2026",
-    image: "/images/blog/living-nature.jpg",
+    image: "/blog/living-nature.jpg",
     excerpt:
       "There is something deeply refreshing about waking up surrounded by trees, fresh mountain air and open skies.",
   },
@@ -35,7 +35,7 @@ const blogPosts = [
     title: "The Beauty of Himalayan Mornings",
     category: "Experiences",
     date: "September 10, 2026",
-    image: "/images/blog/himalayan-morning.jpg",
+    image: "/blog/himalayan-morning.jpg",
     excerpt:
       "Experience the peaceful rhythm of mountain mornings, where misty landscapes and golden sunlight create unforgettable moments.",
   },
@@ -44,7 +44,7 @@ const blogPosts = [
     title: "Designing Homes That Belong to the Hills",
     category: "Architecture",
     date: "August 30, 2026",
-    image: "/images/blog/hill-architecture.jpg",
+    image: "/blog/hill-architecture.jpg",
     excerpt:
       "Explore how thoughtful architecture can work with the natural terrain rather than overpowering it.",
   },
@@ -53,7 +53,7 @@ const blogPosts = [
     title: "A Weekend Escape to the Mountains",
     category: "Travel",
     date: "August 22, 2026",
-    image: "/images/blog/weekend-escape.jpg",
+    image: "/blog/weekend-escape.jpg",
     excerpt:
       "Sometimes all you need is a quiet weekend away from the city. Here's how to make your mountain escape meaningful.",
   },
@@ -62,7 +62,7 @@ const blogPosts = [
     title: "Forest Walks & Quiet Afternoons",
     category: "Nature",
     date: "August 15, 2026",
-    image: "/images/blog/forest-walk.jpg",
+    image: "/blog/forest-walk.jpg",
     excerpt:
       "Walk beneath the pine trees, listen to the wind and discover the calming effect of being surrounded by nature.",
   },
@@ -71,7 +71,7 @@ const blogPosts = [
     title: "Finding Your Own Rhythm in the Hills",
     category: "Lifestyle",
     date: "August 08, 2026",
-    image: "/images/blog/mountain-life.jpg",
+    image: "/blog/mountain-life.jpg",
     excerpt:
       "Mountain living teaches us that life does not always have to move fast. Sometimes the best moments happen when we pause.",
   },
@@ -112,7 +112,7 @@ const Blog = () => {
       <section className="relative flex min-h-[560px] items-center justify-center overflow-hidden">
 
         <img
-          src="/images/blog/blog-hero.jpg"
+          src="/blog/blog-hero.jpg"
           alt="Uttarakhand mountains"
           className="absolute inset-0 h-full w-full object-cover"
         />

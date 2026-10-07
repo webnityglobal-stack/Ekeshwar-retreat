@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
@@ -7,73 +8,73 @@ const galleryImages = [
     id: 1,
     title: "Himalayan Views",
     category: "Nature",
-    image: "/images/gallery/himalayan-view.jpg",
+    image: "/gallery/himalayan-view.jpg",
   },
   {
     id: 2,
     title: "Mountain Living",
     category: "Living",
-    image: "/images/gallery/mountain-living.jpg",
+    image: "/gallery/mountain-living.jpg",
   },
   {
     id: 3,
     title: "Peaceful Mornings",
     category: "Nature",
-    image: "/images/gallery/morning.jpg",
+    image: "/gallery/morning.jpg",
   },
   {
     id: 4,
     title: "The Retreat",
     category: "Architecture",
-    image: "/images/gallery/retreat.jpg",
+    image: "/gallery/retreat.jpg",
   },
   {
     id: 5,
     title: "Forest Surroundings",
     category: "Nature",
-    image: "/images/gallery/forest.jpg",
+    image: "/gallery/forest-life.jpg",
   },
   {
     id: 6,
     title: "Cottage Living",
     category: "Cottages",
-    image: "/images/gallery/cottage.jpg",
+    image: "/gallery/cottage.jpg",
   },
   {
     id: 7,
     title: "Mountain Evenings",
     category: "Nature",
-    image: "/images/gallery/sunset.jpg",
+    image: "/gallery/sunset.jpg",
   },
   {
     id: 8,
     title: "Thoughtful Architecture",
     category: "Architecture",
-    image: "/images/gallery/architecture.jpg",
+    image: "/gallery/architecture.jpg",
   },
   {
     id: 9,
     title: "Terraced Landscape",
     category: "Landscape",
-    image: "/images/gallery/terraced.jpg",
+    image: "/gallery/terraced.jpg",
   },
   {
     id: 10,
     title: "A Quiet Corner",
     category: "Living",
-    image: "/images/gallery/quiet-corner.jpg",
+    image: "/gallery/quiet-corner.jpg",
   },
   {
     id: 11,
     title: "Hillside Cottage",
     category: "Cottages",
-    image: "/images/gallery/hillside-cottage.jpg",
+    image: "/gallery/hillside-cottage.jpg",
   },
   {
     id: 12,
     title: "Golden Hour",
     category: "Nature",
-    image: "/images/gallery/golden-hour.jpg",
+    image: "/gallery/golden-hour.jpg",
   },
 ];
 
@@ -105,38 +106,77 @@ const Gallery = () => {
       ====================================================== */}
       <Navbar />
 
-
       {/* =====================================================
-          HERO SECTION
+          HERO SECTION WITH BACKGROUND VIDEO
       ====================================================== */}
-      <section className="relative flex min-h-[560px] items-center justify-center overflow-hidden">
+      <section className="relative flex min-h-[560px] items-center justify-center overflow-hidden sm:min-h-[620px] lg:min-h-[680px]">
 
-        <img
-          src="/images/gallery/gallery-hero.jpg"
-          alt="Uttarakhand mountains"
+        {/* Background Video */}
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="metadata"
           className="absolute inset-0 h-full w-full object-cover"
-        />
+        >
+          <source
+            src="/videos/ekeshwar-gallery.mp4"
+            type="video/mp4"
+          />
+        </video>
 
+        {/* Dark Overlay */}
         <div className="absolute inset-0 bg-[#102c22]/55" />
 
-        <div className="relative z-10 mx-auto max-w-[900px] px-6 text-center">
+        {/* Bottom Gradient */}
+        <div className="absolute inset-x-0 bottom-0 h-48 bg-gradient-to-t from-[#102c22]/80 via-[#102c22]/20 to-transparent" />
 
-          <p className="mb-5 text-sm font-semibold uppercase tracking-[4px] text-[#e1b15b]">
-            Explore Ekeshwar
-          </p>
+        {/* Hero Content */}
+        <div className="relative z-10 mx-auto max-w-[950px] px-6 text-center">
 
-          <h1 className="font-serif text-5xl font-semibold leading-tight text-white sm:text-6xl lg:text-[76px]">
+          {/* Small Label */}
+          <div className="mb-6 flex items-center justify-center gap-4">
+            <span className="h-px w-10 bg-[#e1b15b]" />
+
+            <p className="text-xs font-semibold uppercase tracking-[4px] text-[#e1b15b] sm:text-sm">
+              Explore Ekeshwar
+            </p>
+
+            <span className="h-px w-10 bg-[#e1b15b]" />
+          </div>
+
+          {/* Heading */}
+          <h1 className="font-serif text-5xl font-semibold leading-[1.05] text-white sm:text-6xl lg:text-[82px]">
             Gallery
           </h1>
 
-          <p className="mx-auto mt-6 max-w-[650px] text-base leading-8 text-white/85 sm:text-lg">
+          {/* Decorative Line */}
+          <div className="mx-auto mt-7 h-[2px] w-16 bg-[#d9a04a]" />
+
+          {/* Description */}
+          <p className="mx-auto mt-7 max-w-[680px] text-base leading-8 text-white/85 sm:text-lg">
             A glimpse into the landscapes, architecture, cottages and
             quiet moments that make life at Ekeshwar Retreat special.
           </p>
 
+          {/* Location */}
+          <div className="mt-8 flex items-center justify-center gap-2 text-xs font-medium uppercase tracking-[2px] text-white/70">
+            <span>Uttarakhand</span>
+            <span className="h-1 w-1 rounded-full bg-[#d9a04a]" />
+            <span>Himalayan Living</span>
+          </div>
+        </div>
+
+        {/* Scroll Indicator */}
+        <div className="absolute bottom-7 left-1/2 z-10 flex -translate-x-1/2 flex-col items-center gap-2 text-white/70">
+          <span className="text-[10px] uppercase tracking-[3px]">
+            Scroll
+          </span>
+
+          <span className="h-9 w-px bg-gradient-to-b from-[#e1b15b] to-transparent" />
         </div>
       </section>
-
 
       {/* =====================================================
           INTRO
@@ -164,7 +204,6 @@ const Gallery = () => {
         </div>
       </section>
 
-
       {/* =====================================================
           CATEGORY FILTER
       ====================================================== */}
@@ -175,6 +214,7 @@ const Gallery = () => {
           <div className="flex flex-wrap justify-center gap-3">
 
             {categories.map((category) => (
+
               <button
                 key={category}
                 type="button"
@@ -197,13 +237,13 @@ const Gallery = () => {
               >
                 {category}
               </button>
+
             ))}
 
           </div>
 
         </div>
       </section>
-
 
       {/* =====================================================
           GALLERY GRID
@@ -215,6 +255,7 @@ const Gallery = () => {
           <div className="columns-1 gap-5 sm:columns-2 lg:columns-3">
 
             {filteredImages.map((item) => (
+
               <div
                 key={item.id}
                 className="group mb-5 break-inside-avoid cursor-pointer overflow-hidden rounded-[22px] bg-white"
@@ -271,7 +312,7 @@ const Gallery = () => {
 
                   </div>
 
-                  {/* View icon */}
+                  {/* View Icon */}
                   <div
                     className="
                       absolute
@@ -298,13 +339,13 @@ const Gallery = () => {
                 </div>
 
               </div>
+
             ))}
 
           </div>
 
         </div>
       </section>
-
 
       {/* =====================================================
           QUOTE / CTA
@@ -353,11 +394,11 @@ const Gallery = () => {
         </div>
       </section>
 
-
       {/* =====================================================
           LIGHTBOX
       ====================================================== */}
       {selectedImage && (
+
         <div
           className="
             fixed
@@ -399,7 +440,6 @@ const Gallery = () => {
             ×
           </button>
 
-
           {/* Image */}
           <div
             className="relative max-h-[90vh] max-w-[1200px]"
@@ -434,7 +474,6 @@ const Gallery = () => {
 
         </div>
       )}
-
 
       {/* =====================================================
           FOOTER

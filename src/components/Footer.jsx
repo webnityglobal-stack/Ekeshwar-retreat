@@ -1,13 +1,20 @@
 import React from "react";
 
+import {
+  FaInstagram,
+  FaFacebookF,
+  FaYoutube,
+  FaWhatsapp,
+} from "react-icons/fa";
+
 const Footer = () => {
   return (
-    <footer className="w-full bg-[#566761] text-white">
+    <footer className="w-full bg-[#244c3b] text-white">
 
       {/* =====================================================
           FOOTER MAIN
       ====================================================== */}
-      <div className="mx-auto max-w-[1280px] px-6 py-16 sm:px-8 sm:py-20 lg:px-10">
+      <div className="mx-auto max-w-[1280px] px-6 py-14 sm:px-8 sm:py-16 lg:px-10 lg:py-20">
 
         <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-[1.4fr_0.8fr_1fr_1.1fr] lg:gap-10">
 
@@ -20,71 +27,88 @@ const Footer = () => {
             <a
               href="/"
               className="inline-flex items-center"
+              aria-label="Ekeshwar Retreat Home"
             >
               <img
                 src="/images/Ekeshwar-Logo.png"
                 alt="Ekeshwar Retreat"
-                className="h-auto w-[175px] object-contain sm:w-[195px]"
+                className="h-auto w-[165px] object-contain sm:w-[185px] lg:w-[195px]"
               />
             </a>
 
+            {/* About */}
             <p className="mt-6 max-w-[380px] text-sm leading-7 text-white/70 sm:text-[15px]">
               A peaceful hillside retreat in Uttarakhand, thoughtfully
               designed around nature, mountain views and contemporary
               comfort.
             </p>
 
-            {/* Social Icons */}
-            <div className="mt-7 flex items-center gap-3">
+            {/* =================================================
+                SOCIAL MEDIA ICONS
+            ================================================== */}
+            <div className="mt-7 flex flex-wrap items-center gap-3">
 
+              {/* Instagram */}
               <a
                 href="#"
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label="Instagram"
                 className="
                   flex h-10 w-10 items-center justify-center
                   rounded-full border border-white/20
-                  text-sm text-white/80
-                  transition duration-300
+                  text-white/80
+                  transition-all duration-300
                   hover:border-[#d6a04a]
                   hover:bg-[#d6a04a]
                   hover:text-white
+                  hover:-translate-y-1
                 "
               >
-                IG
+                <FaInstagram size={18} />
               </a>
 
+              {/* Facebook */}
               <a
                 href="#"
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label="Facebook"
                 className="
                   flex h-10 w-10 items-center justify-center
                   rounded-full border border-white/20
-                  text-sm text-white/80
-                  transition duration-300
+                  text-white/80
+                  transition-all duration-300
                   hover:border-[#d6a04a]
                   hover:bg-[#d6a04a]
                   hover:text-white
+                  hover:-translate-y-1
                 "
               >
-                FB
+                <FaFacebookF size={16} />
               </a>
 
+              {/* YouTube */}
               <a
                 href="#"
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label="YouTube"
                 className="
                   flex h-10 w-10 items-center justify-center
                   rounded-full border border-white/20
-                  text-sm text-white/80
-                  transition duration-300
+                  text-white/80
+                  transition-all duration-300
                   hover:border-[#d6a04a]
                   hover:bg-[#d6a04a]
                   hover:text-white
+                  hover:-translate-y-1
                 "
               >
-                YT
+                <FaYoutube size={19} />
               </a>
 
+              {/* WhatsApp */}
               <a
                 href="https://wa.me/918882607879"
                 target="_blank"
@@ -93,14 +117,15 @@ const Footer = () => {
                 className="
                   flex h-10 w-10 items-center justify-center
                   rounded-full border border-white/20
-                  text-sm text-white/80
-                  transition duration-300
+                  text-white/80
+                  transition-all duration-300
                   hover:border-[#d6a04a]
                   hover:bg-[#d6a04a]
                   hover:text-white
+                  hover:-translate-y-1
                 "
               >
-                WA
+                <FaWhatsapp size={19} />
               </a>
 
             </div>
@@ -111,18 +136,24 @@ const Footer = () => {
               COLUMN 2 — QUICK LINKS
           ================================================== */}
           <div>
+
             <h3 className="text-[15px] font-semibold uppercase tracking-[2px] text-white">
               Quick Links
             </h3>
 
-            <div className="mt-6 h-[2px] w-10 bg-[#d6a04a]" />
+            <div className="mt-5 h-[2px] w-10 bg-[#d6a04a]" />
 
-            <ul className="mt-6 space-y-4">
+            <ul className="mt-6 space-y-3.5">
 
               <li>
                 <a
-                  href="#about"
-                  className="text-sm text-white/65 transition hover:text-[#d6a04a]"
+                  href="/about"
+                  className="
+                    text-sm text-white/65
+                    transition duration-300
+                    hover:translate-x-1
+                    hover:text-[#d6a04a]
+                  "
                 >
                   About Us
                 </a>
@@ -130,8 +161,13 @@ const Footer = () => {
 
               <li>
                 <a
-                  href="#cottages"
-                  className="text-sm text-white/65 transition hover:text-[#d6a04a]"
+                  href="/#cottages"
+                  className="
+                    text-sm text-white/65
+                    transition duration-300
+                    hover:translate-x-1
+                    hover:text-[#d6a04a]
+                  "
                 >
                   Our Cottages
                 </a>
@@ -139,26 +175,41 @@ const Footer = () => {
 
               <li>
                 <a
-                  href="#layouts"
-                  className="text-sm text-white/65 transition hover:text-[#d6a04a]"
+                  href="/gallery"
+                  className="
+                    text-sm text-white/65
+                    transition duration-300
+                    hover:translate-x-1
+                    hover:text-[#d6a04a]
+                  "
                 >
-                  Layouts
+                  Gallery
                 </a>
               </li>
 
               <li>
                 <a
-                  href="#contact"
-                  className="text-sm text-white/65 transition hover:text-[#d6a04a]"
+                  href="/#location"
+                  className="
+                    text-sm text-white/65
+                    transition duration-300
+                    hover:translate-x-1
+                    hover:text-[#d6a04a]
+                  "
                 >
-                  FAQ
+                  Location
                 </a>
               </li>
 
               <li>
                 <a
-                  href="#contact"
-                  className="text-sm text-white/65 transition hover:text-[#d6a04a]"
+                  href="/contact"
+                  className="
+                    text-sm text-white/65
+                    transition duration-300
+                    hover:translate-x-1
+                    hover:text-[#d6a04a]
+                  "
                 >
                   Contact
                 </a>
@@ -172,18 +223,24 @@ const Footer = () => {
               COLUMN 3 — EXPLORE
           ================================================== */}
           <div>
+
             <h3 className="text-[15px] font-semibold uppercase tracking-[2px] text-white">
               Explore
             </h3>
 
-            <div className="mt-6 h-[2px] w-10 bg-[#d6a04a]" />
+            <div className="mt-5 h-[2px] w-10 bg-[#d6a04a]" />
 
-            <ul className="mt-6 space-y-4">
+            <ul className="mt-6 space-y-3.5">
 
               <li>
                 <a
-                  href="#"
-                  className="text-sm text-white/65 transition hover:text-[#d6a04a]"
+                  href="/#master-plan"
+                  className="
+                    text-sm text-white/65
+                    transition duration-300
+                    hover:translate-x-1
+                    hover:text-[#d6a04a]
+                  "
                 >
                   Master Plan
                 </a>
@@ -191,8 +248,13 @@ const Footer = () => {
 
               <li>
                 <a
-                  href="#"
-                  className="text-sm text-white/65 transition hover:text-[#d6a04a]"
+                  href="/#master-plan"
+                  className="
+                    text-sm text-white/65
+                    transition duration-300
+                    hover:translate-x-1
+                    hover:text-[#d6a04a]
+                  "
                 >
                   Cottage Layouts
                 </a>
@@ -200,28 +262,43 @@ const Footer = () => {
 
               <li>
                 <a
-                  href="#"
-                  className="text-sm text-white/65 transition hover:text-[#d6a04a]"
+                  href="/gallery"
+                  className="
+                    text-sm text-white/65
+                    transition duration-300
+                    hover:translate-x-1
+                    hover:text-[#d6a04a]
+                  "
                 >
-                  Architectural Design
+                  Gallery
                 </a>
               </li>
 
               <li>
                 <a
-                  href="#"
-                  className="text-sm text-white/65 transition hover:text-[#d6a04a]"
+                  href="/about"
+                  className="
+                    text-sm text-white/65
+                    transition duration-300
+                    hover:translate-x-1
+                    hover:text-[#d6a04a]
+                  "
                 >
-                  Design Vistas
+                  Uttarakhand Living
                 </a>
               </li>
 
               <li>
                 <a
-                  href="#"
-                  className="text-sm text-white/65 transition hover:text-[#d6a04a]"
+                  href="/#location"
+                  className="
+                    text-sm text-white/65
+                    transition duration-300
+                    hover:translate-x-1
+                    hover:text-[#d6a04a]
+                  "
                 >
-                  Testimonials
+                  Location & Connectivity
                 </a>
               </li>
 
@@ -238,24 +315,36 @@ const Footer = () => {
               Get In Touch
             </h3>
 
-            <div className="mt-6 h-[2px] w-10 bg-[#d6a04a]" />
+            <div className="mt-5 h-[2px] w-10 bg-[#d6a04a]" />
 
             <div className="mt-6 space-y-5">
 
               {/* Location */}
               <div className="flex items-start gap-4">
 
-                <span className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-white/10 text-sm">
+                <span
+                  className="
+                    mt-0.5
+                    flex h-9 w-9 shrink-0
+                    items-center justify-center
+                    rounded-full
+                    bg-white/10
+                    text-sm
+                    text-[#d6a04a]
+                  "
+                >
                   ●
                 </span>
 
                 <div>
-                  <p className="text-xs uppercase tracking-wider text-white/40">
+                  <p className="text-[11px] uppercase tracking-[1.5px] text-white/40">
                     Location
                   </p>
 
                   <p className="mt-1 text-sm leading-6 text-white/70">
-                    Satpuli Pauri Garhwal Uttarakhand PIN code -246001
+                    Satpuli, Pauri Garhwal,
+                    <br />
+                    Uttarakhand – 246001
                   </p>
                 </div>
 
@@ -265,21 +354,50 @@ const Footer = () => {
               {/* Phone */}
               <div className="flex items-start gap-4">
 
-                <span className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-white/10 text-sm">
+                <span
+                  className="
+                    mt-0.5
+                    flex h-9 w-9 shrink-0
+                    items-center justify-center
+                    rounded-full
+                    bg-white/10
+                    text-sm
+                    text-[#d6a04a]
+                  "
+                >
                   ☎
                 </span>
 
                 <div>
-                  <p className="text-xs uppercase tracking-wider text-white/40">
+
+                  <p className="text-[11px] uppercase tracking-[1.5px] text-white/40">
                     Phone
                   </p>
 
                   <a
-                    href="tel:+91-9910058152 ,+91-6386293245"
-                    className="mt-1 block text-sm text-white/70 transition hover:text-[#d6a04a]"
+                    href="tel:+919910058152"
+                    className="
+                      mt-1 block
+                      text-sm text-white/70
+                      transition duration-300
+                      hover:text-[#d6a04a]
+                    "
                   >
-                    +91-9910058152 , +91-6386293245
+                    +91 99100 58152
                   </a>
+
+                  <a
+                    href="tel:+916386293245"
+                    className="
+                      mt-1 block
+                      text-sm text-white/70
+                      transition duration-300
+                      hover:text-[#d6a04a]
+                    "
+                  >
+                    +91 63862 93245
+                  </a>
+
                 </div>
 
               </div>
@@ -288,21 +406,41 @@ const Footer = () => {
               {/* Email */}
               <div className="flex items-start gap-4">
 
-                <span className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-white/10 text-sm">
+                <span
+                  className="
+                    mt-0.5
+                    flex h-9 w-9 shrink-0
+                    items-center justify-center
+                    rounded-full
+                    bg-white/10
+                    text-sm
+                    text-[#d6a04a]
+                  "
+                >
                   @
                 </span>
 
-                <div>
-                  <p className="text-xs uppercase tracking-wider text-white/40">
+                <div className="min-w-0">
+
+                  <p className="text-[11px] uppercase tracking-[1.5px] text-white/40">
                     Email
                   </p>
 
                   <a
-                    href="mailto:info@ekeshwarretreat.com"
-                    className="mt-1 block break-all text-sm text-white/70 transition hover:text-[#d6a04a]"
+                    href="mailto:manglambuildtec@gmail.com"
+                    className="
+                      mt-1
+                      block
+                      break-all
+                      text-sm
+                      text-white/70
+                      transition duration-300
+                      hover:text-[#d6a04a]
+                    "
                   >
-                   maglambuildtec@gmail.com
+                    manglambuildtec@gmail.com
                   </a>
+
                 </div>
 
               </div>
@@ -328,9 +466,12 @@ const Footer = () => {
                 text-sm
                 font-semibold
                 text-white
-                transition
+                shadow-sm
+                transition-all
                 duration-300
                 hover:bg-[#bd8836]
+                hover:shadow-lg
+                hover:-translate-y-0.5
                 sm:w-auto
               "
             >
@@ -348,22 +489,24 @@ const Footer = () => {
       ====================================================== */}
       <div className="border-t border-white/10">
 
-        <div className="
-          mx-auto
-          flex
-          max-w-[1280px]
-          flex-col
-          gap-4
-          px-6
-          py-6
-          text-center
-          sm:px-8
-          lg:flex-row
-          lg:items-center
-          lg:justify-between
-          lg:px-10
-          lg:text-left
-        ">
+        <div
+          className="
+            mx-auto
+            flex
+            max-w-[1280px]
+            flex-col
+            gap-4
+            px-6
+            py-6
+            text-center
+            sm:px-8
+            lg:flex-row
+            lg:items-center
+            lg:justify-between
+            lg:px-10
+            lg:text-left
+          "
+        >
 
           <p className="text-xs leading-6 text-white/45 sm:text-sm">
             © {new Date().getFullYear()} Ekeshwar Retreat. All Rights Reserved.
@@ -372,15 +515,25 @@ const Footer = () => {
           <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 lg:justify-end">
 
             <a
-              href="#"
-              className="text-xs text-white/45 transition hover:text-[#d6a04a] sm:text-sm"
+              href="/privacy-policy"
+              className="
+                text-xs text-white/45
+                transition duration-300
+                hover:text-[#d6a04a]
+                sm:text-sm
+              "
             >
               Privacy Policy
             </a>
 
             <a
-              href="#"
-              className="text-xs text-white/45 transition hover:text-[#d6a04a] sm:text-sm"
+              href="/terms"
+              className="
+                text-xs text-white/45
+                transition duration-300
+                hover:text-[#d6a04a]
+                sm:text-sm
+              "
             >
               Terms & Conditions
             </a>
