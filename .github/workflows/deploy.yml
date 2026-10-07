@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
@@ -31,7 +31,7 @@ jobs:
           server: ${{ secrets.FTP_HOST }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: public_html/
+          server-dir:  ${{ secrets.FTP_Server_DIR }}
           protocol: ftp
           port: 21
           local-dir: ./dist/
